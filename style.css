@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+li{
+  list-style: inside;
+}
+
+.container {
+    width: 100vw;
+    height: 675px;
+    background-color:#131313 ;
+    color: #FFFFFF;
+    padding: 0 0px;
+    position: relative;
+    
+}
+
+.content {
+    top:10%;
+    position: absolute;
+    color:#fff;
+    padding: 0 0px;
+    
+    
+    
+}
+
+.timer {
+    display: flex;
+    margin-left: 25px;
+    
+}
+
+.timer div {
+    margin-right: 30px;
+    
+}
+
+.timer div p {
+    font-size: 50px;
+    margin-bottom: -14px;
+}
+
+.instructions{
+  margin: 20% 25px;
+}
+
+.ok{
+  height: 675px;
+  background-color: #29158E;
+  color:#fff;
+  
+}
+.ok h3{
+  margin-left: 12px;
+}
+.imgg {
+  margin:18px 10px;
+  display:flex;
+  justify-content: space-between;
+}
+.imgg img{
+  width: 50px;
+  height: 50px;
+}
+
+.grille{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.container img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+
+
+.x1 {
+  animation: x1 7s linear infinite alternate;
+}
+
+.x2 {
+  animation: x2 7s cubic-bezier(.10, .10, .25, .90) infinite alternate;
+}
+.x3 {
+  animation: x3 7s linear infinite normal forwards;
+}
+.x4 {
+  animation: x4 2s ease 0s infinite alternate forwards;
+}
+.x5 {
+    animation: x5 4s linear infinite alternate;
+}
+.x6 {
+    animation: x6 6s linear infinite alternate;
+}
+.x7 {
+  animation: x7 8s linear infinite none;
+}
+
+
+@keyframes x1 {
+  0% {
+    transform: translate(0vw,0vh);
+  }
+  33% {
+    transform: translate(calc(100vw - 70px ), 33vh);
+  }
+  66% {
+    transform: translate(0vh, 66vh);
+  }
+  100% {
+    transform: translate(calc(100vw - 70px ), calc(675px - 70px ));
+  }
+}
+
+@keyframes x2 {
+  0% {
+    transform: translate(0vw,0vh);
+  }
+  25% {
+    transform: translate(calc(100vw - 70px ),25vh);
+  }
+  50% {
+    transform: translate(0vw, 50vh);
+  }
+  75% {
+    transform: translate(calc(100vw - 70px ), calc(75vh - 70px));
+  }
+  100% {
+    transform: translate(0vw,calc(675px - 70px ));
+  }
+}
+
+@keyframes x3 {
+  0% {
+    transform: translate(0vw,50vh);
+  }
+  25% {
+    transform: translate(50vw,0vh);
+  }
+  50% {
+    transform: translate(calc(100vw - 70px), 50vh);
+  }
+  75% {
+    transform: translate(50vw, calc(675px - 70px));
+  }
+  100% {
+    transform: translate(0vw,50vh);
+  }
+}
+
+@keyframes x4 {
+	0% { bottom: 20px;left: calc(100vw - 90px);}
+	100% {
+    bottom: 20px;left: calc(100vw - 90px);
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+    bottom: 20px;left: calc(100vw - 90px);
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+    bottom: 20px;left: calc(100vw - 90px);
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+    bottom: 20px;left: calc(100vw - 90px);
+		transform: rotate(10deg);
+	}
+
+	80% {
+    bottom: 20px;left: calc(100vw - 90px);
+		transform: rotate(-8deg);
+	}
+
+	90% {
+    bottom: 20px;left: calc(100vw - 90px);
+		transform: rotate(8deg);
+	}
+}
+
+@keyframes x5 {
+  0% { top:calc(675px - 70px);right: 0;}
+  50%{ top:50;right : calc(100vw - 70px);}
+  100%{ top:0vh;right: 0;}
+}
+
+@keyframes x6 {
+  0% {
+    transform: translate(0vw,0vh);
+  }
+  25% {
+    transform: translate(calc(100vw - 70px),15vh);
+  }
+  50% {
+    transform: translate(0vw, 30vh);
+  }
+  75% {
+    transform: translate(calc(100vw - 70px),45vh);
+  }
+  100% {
+    transform: translate(0vw,calc(675px - 70px));
+  }
+}
+
+@keyframes x7 {
+  0% {
+    transform: translate(0vw,0vh);
+  }
+  25% {
+    transform: translate(calc(100vw - 70px),0vh);
+  }
+  50% {
+    transform: translate(calc(100vw - 70px), calc(80vh - 70px));
+  }
+  75% {
+    transform: translate(0vw, calc(675px - 70px));
+  }
+  100% {
+    transform: translate(0vw,0vh);
+  }
+}
+
+/* mettre plus de temps pour les animations sur pc ?  */
+
+#grid {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jeu{
+  margin-top: 105px;
+  margin-bottom: 105px;
+}
